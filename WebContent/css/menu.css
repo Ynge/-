@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+table{
+	background-color: #ff471a;
+}
+tr:HOVER {
+	background-color: #66ff33;
+}
+table a{
+	color:white;
+}

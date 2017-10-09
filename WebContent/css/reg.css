@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+#reg{
+	margin-top: 10%;
+}
+table{
+	border-spacing:5px 5px;
+	border: 1px solid red;
+}
+.bg1{
+	font-size: 30px;
+	background-color: #71db71;
+	color: #e6005c;
+}
+tr{
+	display:block;
+	margin:4px;
+}
+td{
+	display:inline-block;
+	margin-right:5px;
+}
+textarea{
+	resize:none;
+}
+.name{
+	width:70px;
+	background-color: #ffc080;
+	margin-right:10px;
+}
+.value{
+	width:190px;
+}

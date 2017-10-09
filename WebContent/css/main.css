@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+body{
+	text-align: center;
+	background-color: #4d79ff;
+}
+h1{
+	line-height:100px;
+	text-align:center;
+	color:#00ffff;
+}
+#menu{
+	position:fixed;
+	right:20px;
+	top:200px;
+}
+#content{
+	background-color: #ffd9b3;
+}

@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+.container{
+	height:400px;
+	width:600px;
+	margin-top:10%;
+	border: 1px solid green;
+}
+
+hr{
+	width:90%;
+}
+p:nth-child(1){
+	font-family: "微软雅黑","黑体",serif;
+	font-size: 30px;
+	color: #ff3300;
+}
+.content{
+	margin-top:100px;
+}
+span{
+	color:white;
+	margin-top:50px;
+	display:block;
+	font-size: 20px;
+	background-color: #1a1aff;
+	height:30px;
+	width:90px;
+}
+span:HOVER{
+	background-color: #ff0000;
+}

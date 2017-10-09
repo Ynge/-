@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+center{
+	margin-top: 10%;
+}
+caption{
+	color:white;
+	font-size:20px;
+	text-align: center;
+	background-color: #ff471a;
+}
+.text{
+	color:white;
+	background-color: #ff471a;
+}
+table{
+}
+td{
+	text-align:center;
+	vertical-align: middle;
+}
+textarea{
+	resize:none;
+}
