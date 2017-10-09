@@ -12,28 +12,28 @@ public class DbHandle {
 	ResultSet rs = null;
 	
 	/**
-	 * Êı¾İ¿âÁ¬½Ó
+	 * æ•°æ®åº“è¿æ¥
 	 */
 	public void getConnection(){
 		final String URL = "jdbc:mysql://127.0.0.1:3306/news_db?characterEncoding=utf-8";
 		final String DBDRIVER = "com.mysql.jdbc.Driver";
 		final String USER = "root";
-		final String PWD = "xsy19960626";
+		final String PWD = "å¯†ç ";
 		
 		try {
 			Class.forName(DBDRIVER);
 			conn = DriverManager.getConnection(URL,USER,PWD);
 		 } catch (ClassNotFoundException e) {
-				System.out.println("Êı¾İ¿âÇı¶¯¼ÓÔØÊ§°Ü£¡");
+				System.out.println("æ•°æ®åº“é©±åŠ¨åŠ è½½å¤±è´¥ï¼");
 				e.printStackTrace();
 			}catch (SQLException e) {
-				System.out.println("Êı¾İ¿âÁ¬½ÓÊ§°Ü£¡");
+				System.out.println("æ•°æ®åº“è¿æ¥å¤±è´¥ï¼");
 				e.printStackTrace();
 			}
 		}
 	
 	/**
-	 * Êı¾İ¿â²éÑ¯
+	 * æ•°æ®åº“æŸ¥è¯¢
 	 * @param sql
 	 */
 	public ResultSet executeQuery(String sql){
@@ -46,7 +46,7 @@ public class DbHandle {
 			}
 			rs = st.executeQuery(sql);
 		} catch (Exception e) {
-			System.out.println("Ö´ĞĞÊı¾İ¿â²éÑ¯³ö´í£º"+sql);
+			System.out.println("æ‰§è¡Œæ•°æ®åº“æŸ¥è¯¢å‡ºé”™ï¼š"+sql);
 			e.printStackTrace();
 		}
 		return rs;
@@ -55,9 +55,9 @@ public class DbHandle {
 	
 	
 	/**
-	 * Êı¾İ¿âÔöÉ¾¸Ä
+	 * æ•°æ®åº“å¢åˆ æ”¹
 	 * @param sql
-	 * @return >0Ö´ĞĞ³É¹¦
+	 * @return >0æ‰§è¡ŒæˆåŠŸ
 	 */
 	public int executeUpdate(String sql){
 		int ret;
@@ -70,7 +70,7 @@ public class DbHandle {
 			}
 			ret = st.executeUpdate(sql);
 		} catch (Exception e) {
-			System.out.println("Ö´ĞĞexecuteUpdate(sql)·½·¨³ö´í£º"+sql);
+			System.out.println("æ‰§è¡ŒexecuteUpdate(sql)æ–¹æ³•å‡ºé”™ï¼š"+sql);
 			e.printStackTrace();
 			ret=-1;
 		}
@@ -79,7 +79,7 @@ public class DbHandle {
 	}
 	
 	/**
-	 * ¹Ø±ÕÊı¾İ¿â
+	 * å…³é—­æ•°æ®åº“
 	 */
 	public void close(){
 		try {
@@ -93,7 +93,7 @@ public class DbHandle {
 				conn.close();
 			}
 		} catch (Exception e) {
-			System.out.println("Ö´ĞĞclose()·½·¨³ö´í£¡");
+			System.out.println("æ‰§è¡Œclose()æ–¹æ³•å‡ºé”™ï¼");
 			e.printStackTrace();
 		}
 	}
